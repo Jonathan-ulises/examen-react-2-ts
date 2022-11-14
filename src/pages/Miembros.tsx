@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import ItemMiembro from '../components/ItemMiembro';
 import MiembroContext from '../context/Miembro/MiembroContext';
 import { MbrContext } from '../model/Miembro.interface';
+import { Link } from 'react-router-dom';
 
 const Miembros = () => {
 
@@ -15,9 +16,9 @@ const Miembros = () => {
   return (
     <div className='container'>
       <div className="d-grid mt-2">
-        <button className='btn btn-warning'>
+        <Link to={'/registrar'} className='btn btn-warning'>
           Agregar
-        </button>
+        </Link>
       </div>
       <div className="row justify-content-center mt-3">
         <div className="col-11 shadow rounded">

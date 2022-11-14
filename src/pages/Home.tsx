@@ -1,5 +1,6 @@
 import UTL from '../assets/img/universidad.png';
 import CONGRESO from '../assets/img/congresoNacional.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -19,10 +20,10 @@ const Home = () => {
                 <h1>Congreso de tecnologias de la informacion</h1>
             </div>
         </div>
-        <div className="d-grid mt-5">
-            <button className='btn btn-warning'>
+        <div className="d-grid my-5">
+            <Link to={'/miembros'} className='btn btn-warning'>
                 Entrar
-            </button>
+            </Link>
         </div>
     </div>
   )
